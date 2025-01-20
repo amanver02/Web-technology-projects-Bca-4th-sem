@@ -1,0 +1,138 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+ 
+}
+
+.schedule-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.schedule-container h1 {
+  font-size: 24px;
+  color: #003399;
+  margin: 10px 0;
+}
+
+.schedule-container h2 {
+  font-size: 20px;
+  color: #9900cc;
+}
+
+.schedule-container h3 {
+  font-size: 18px;
+  color: #cc0000;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  font-size: 14px;
+ 
+}
+
+
+.schedule-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.header-table {
+  width: 100%;
+  border: 2px solid blue;
+  text-align: center;
+}
+
+.header-table td {
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.title {
+  background-color: lightblue;
+  font-size: 24px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.subtitle {
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+}
+
+.room-info {
+  background-color: yellowgreen;
+  font-size: 18px;
+  color: white;
+}
+
+
+
+/*new css */
+.schedule-table .monday {
+  background-color: #8cc540; /* Green */
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table .tuesday {
+  background-color: #00b0f0; /* Blue */
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table .wednesday {
+  background-color: #ffcc00; /* Yellow */
+  font-weight: bold;
+}
+
+.schedule-table .thursday {
+  background-color: #f08585; /* Light Red */
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table .friday {
+  background-color: #ff9900; /* Orange */
+  color: white;
+  font-weight: bold;
+}
+
+
+
