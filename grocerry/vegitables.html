@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegetables Store</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f8e9;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 24px;
+      }
+
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .offer {
+        background-color: #ff5722;
+        color: white;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .card h3 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #777;
+        margin: 5px 0;
+      }
+
+      .price {
+        font-size: 16px;
+        color: #2e7d32;
+        font-weight: bold;
+      }
+
+      .original-price {
+        font-size: 14px;
+        text-decoration: line-through;
+        color: #999;
+        margin-left: 5px;
+      }
+
+      .add-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .add-button:hover {
+        background-color: #388e3c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Fresh Vegetables</header>
+
+    <div class="product-container">
+      <!-- Vegetable 1 -->
+      <div class="card">
+        <div class="offer">20% OFF</div>
+        <img
+          src="https://media.istockphoto.com/id/1388403435/photo/fresh-carrots-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=XmrTb_nASc7d-4zVKUz0leeTT4fibDzWi_GpIun0Tlc="
+          alt="Carrot"
+        />
+        <div class="card-content">
+          <h3>Carrot</h3>
+          <p>1 kg</p>
+          <p class="price">₹40 <span class="original-price">₹50</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 2 -->
+      <div class="card">
+        <div class="offer">15% OFF</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0TLQ-TatGslPnS8LwNMnQzkymUZI3Q-_-gw&s"
+          alt="Spinach"
+        />
+        <div class="card-content">
+          <h3>Spinach</h3>
+          <p>500 g</p>
+          <p class="price">₹25 <span class="original-price">₹30</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 3 -->
+      <div class="card">
+        <div class="offer">10% OFF</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzwEkOXQTxOSef5zel8-cY4a4Y2TShrSBcA&s"
+          alt="Potato"
+        />
+        <div class="card-content">
+          <h3>Potato</h3>
+          <p>1 kg</p>
+          <p class="price">₹22 <span class="original-price">₹25</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 4 -->
+      <div class="card">
+        <div class="offer">25% OFF</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIlJ4YMCTemRZamCzBUoLWp9ZVfW7ap80wA&s"
+          alt="Broccoli"
+        />
+        <div class="card-content">
+          <h3>Broccoli</h3>
+          <p>1 pc (Approx. 300g)</p>
+          <p class="price">₹45 <span class="original-price">₹60</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 5 -->
+      <div class="card">
+        <div class="offer">30% OFF</div>
+        <img
+          src="https://media.post.rvohealth.io/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb.jpg"
+          alt="Tomato"
+        />
+        <div class="card-content">
+          <h3>Tomato</h3>
+          <p>1 kg</p>
+          <p class="price">₹35 <span class="original-price">₹50</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 6 -->
+      <div class="card">
+        <div class="offer">18% OFF</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5QOM7dLzOofjnNeozvtQm0OgqAW2LU7nS3Q&s"
+          alt="Onion"
+        />
+        <div class="card-content">
+          <h3>Onion</h3>
+          <p>1 kg</p>
+          <p class="price">₹28 <span class="original-price">₹34</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 7 -->
+      <div class="card">
+        <div class="offer">12% OFF</div>
+        <img
+          src="https://www.spencers.in/media/catalog/product/1/0/1000853_1.jpg"
+          alt="Capsicum"
+        />
+        <div class="card-content">
+          <h3>Capsicum</h3>
+          <p>500 g</p>
+          <p class="price">₹44 <span class="original-price">₹50</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Vegetable 8 -->
+      <div class="card">
+        <div class="offer">22% OFF</div>
+        <img
+          src="https://assets.clevelandclinic.org/transform/871f96ae-a852-4801-8675-683191ce372d/Benefits-Of-Cabbage-589153824-770x533-1_jpg"
+          alt="Cabbage"
+        />
+        <div class="card-content">
+          <h3>Cabbage</h3>
+          <p>1 pc (Approx. 500g)</p>
+          <p class="price">₹39 <span class="original-price">₹50</span></p>
+          <button class="add-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

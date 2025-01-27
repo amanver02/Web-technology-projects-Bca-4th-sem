@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+<link rel="stylesheet" href="">
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.product-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.offer-badge {
+  background: #ff5722;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.sponsored {
+  font-size: 12px;
+  color: #aaa;
+  margin: 5px 0;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weight {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+
+.add-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-button:hover {
+  background: #388e3c;
+}
+
+
+/* new */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a fixed width for the cards */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+h2 {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Grocery Store</h1>
+        <nav>
+            <ul>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="vegitables.html">Vegetables</a></li>
+                <li><a href="meat.html">Meat</a></li>
+                <li><a href="grains.html">Grains</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <div class="product-cards">
+    <div class="card">
+      <div class="offer-badge">40% OFF</div>
+      <img src="https://cdn.nyallergy.com/wp-content/uploads/square-1432664914-strawberry-facts1.jpeg" alt="Strawberry" class="product-image">
+      <p class="sponsored">Sponsored</p>
+      <h3 class="product-name">Strawberry</h3>
+      <p class="weight">200 g</p>
+      <p class="price">
+        <span class="current-price">₹49</span>
+        <span class="original-price">₹82.49</span>
+      </p>
+      <button class="add-button">Add</button>
+    </div>
+
+    <div class="card">
+      <div class="offer-badge">46% OFF</div>
+      <img src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" alt="Kiwi" class="product-image">
+      <p class="sponsored">Sponsored</p>
+      <h3 class="product-name">Kiwi - Green</h3>
+      <p class="weight">3 pcs (Approx. 220g - 260g)</p>
+      <p class="price">
+        <span class="current-price">₹100.5</span>
+        <span class="original-price">₹187.67</span>
+      </p>
+      <button class="add-button">Add</button>
+    </div>
+
+    <div class="card">
+      <div class="offer-badge">39% OFF</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnD3WAcym3O46morna-FwjXJAxfBw8rF8jQ&s" alt="Broccoli" class="product-image">
+      <p class="sponsored">Sponsored</p>
+      <h3 class="product-name">Broccoli</h3>
+      <p class="weight">1 pc (Approx. 250g - 500g)</p>
+      <p class="price">
+        <span class="current-price">₹25</span>
+        <span class="original-price">₹41</span>
+      </p>
+      <button class="add-button">Add</button>
+    </div>
+  </div>
+        <div class="card-container">
+            <div class="card" id="fruits">
+                <h2 ></h2> <a href="fruits.html "></a> <h2>Fruits</h2></h2>
+                <p>Explore our fresh and organic fruits.</p>
+            </div>
+
+            <div class="card" id="vegetables">
+                <h2>Vegetables</h2>
+                <p>Find a variety of fresh vegetables.</p>
+            </div>
+
+            <div class="card" id="dairy">
+                <h2>Dairy</h2>
+                <p>Check out our selection of dairy products.</p>
+            </div>
+
+            <div class="card" id="meat">
+                <h2>Meat</h2>
+                <p>Quality meat products for your meals.</p>
+            </div>
+
+            <div class="card" id="grains">
+                <h2>Grains</h2>
+                <p>Healthy grains for a balanced diet.</p>
+            </div>
+
+            <div class="card" id="snacks">
+                <h2>Snacks</h2>
+                <p>Delicious snacks for every occasion.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Grocery Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
